@@ -3,8 +3,17 @@ package com.java.practice;
 
 	import java.util.*;
 	import java.io.*;
+	/**
+	 * this is an other example for looping
+	 * @author yashwanthveerepalli
+	 *util and io are the importing packages
+	 */
 
 	public class Loop2{
+		/**
+		 * this displays im a binary format
+		 * @param argh is to take the input
+		 */
 	    public static void main(String []argh){
 	        Scanner in = new Scanner(System.in);
 	        int t=in.nextInt();

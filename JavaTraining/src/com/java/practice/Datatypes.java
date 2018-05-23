@@ -7,9 +7,18 @@ package com.java.practice;
 	import java.math.*;
 	import java.util.regex.*;
 
-
+/**
+ * Code to print the data types for the given number
+ * @author yashwanthveerepalli
+ *Firstly, taking the packages io,util,text,math,util.regex
+ */
 	public class Datatypes {
-	    static String whoCanFitTheNumber(String numString)
+	   /**
+	    * Inserting the number for which the data type is needed
+	    * @param numString asthe input variable
+	    * @return returns the answer as where can this datatype is being fitted
+	    */
+		static String whoCanFitTheNumber(String numString)
 	    {
 	        String answer = "";
 	        try{
@@ -30,7 +39,10 @@ package com.java.practice;
 	        return answer;
 	    }
 	    public static void main(String[] args) {
-	        Scanner scanner = new Scanner(System.in);
+	        /**
+	         * here the scanner asks for the number of queries to be done
+	         */
+	    	Scanner scanner = new Scanner(System.in);
 	        int numTestCases = scanner.nextInt() ;
 	        scanner.nextLine();
 	        for(int i=0; i<numTestCases;i++){

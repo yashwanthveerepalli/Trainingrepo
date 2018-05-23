@@ -1,7 +1,16 @@
 package com.java.practice;
 import java.util.*;
 import java.security.*;
+/**
+ * The program is for int to string
+ * @author yashwanthveerepalli
+ *the util,security are the packages
+ */
 public class IntString {
+	/**
+	 * the arguments at run time is taken
+	 * @param args -input type
+	 */
  public static void main(String[] args) {
 
   DoNotTerminate.forbidExit();
@@ -10,8 +19,14 @@ public class IntString {
    Scanner in = new Scanner(System.in);
    int n = in .nextInt();
    in.close();
+   /**
+    * Integer to string method is used in the following line
+    */
    String s = Integer.toString(n);
    if (n == Integer.parseInt(s)) {
+	   /**
+	    * here if the if condition got satisfied it prints
+	    */
 	    System.out.println("Good job");
 	   } else {
 	    System.out.println("Wrong answer.");

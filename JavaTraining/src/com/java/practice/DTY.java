@@ -5,7 +5,19 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+/**
+ * The code for displaying day for date
+ * @author yashwanthveerepalli
+ *the packages used are DFS,PE,SDF,date,locale,scanner
+ */
 public class DTY {
+	/**
+	 * the parameters used for the DTY are
+	 * @param day-- to intake day (dd)
+	 * @param month--to intake  month(mm)
+	 * @param year-- to intake year (yyyy)
+	 * @return-- to give the day out
+	 */
     public static String getDay(String day, String month, String year) {
         
         int intyear = Integer.parseInt(year);
@@ -24,10 +36,10 @@ public class DTY {
         
         return dayOfWeek.toUpperCase();
 }public static void main(String[] args) {
-    Scanner in = new Scanner(System.in);
-    String month = in.next();
-    String day = in.next();
-    String year = in.next();
+    Scanner o = new Scanner(System.in);
+    String month = o.next();
+    String day = o.next();
+    String year = o.next();
     
     System.out.println(getDay(day, month, year));
 }
