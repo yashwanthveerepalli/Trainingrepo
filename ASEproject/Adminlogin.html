@@ -1,0 +1,71 @@
+<html><head></head><body>
+<style>
+h1 { color: black; }
+body { background-color: white;}
+</style>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text],input[type=password], input[type=email], select {
+  width: 30%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=button],select {
+background-color: #FCE205;
+  width: 20%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #FCE205;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+img { 
+  width: 30%;
+  height: auto;
+  opacity: 1.0;
+}
+</style><center>
+<title>Admin Login</title>
+<br><br><br>
+<h1> ADMIN LOGIN</h1><br><br><br>
+    <form><center>
+<img src="wsu.jpg" alt="Cinque Terre" width="1000" height="300">
+   </br>
+    <input type="text" placeholder="Username" id="text1" required=""><br>
+    <input type="password" placeholder="Password" id="text2" required=""><br><br><br><br><br>
+    <input type="button" value="GET CLOCK IN SHEET" 
+onclick="javascript:validate()">
+</center></form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "admin"
+       && document.getElementById("text2").value == "admin" )
+    {
+        location.href="http://localhost:8080/ASEproject/empsearch.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="file:///Users/yashwanthveerepalli/Desktop/yashcod/admin.html?text1=yashwanth&text2=veerepalli";
+    }
+}
+</script>
+
+</center></body></html>
